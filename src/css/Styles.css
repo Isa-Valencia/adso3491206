@@ -36,6 +36,70 @@ body{
             }
         }
     }
+    &.css {
+        background: linear-gradient(45deg, black,#663399);
+        background-attachment: fixed;
+            main {
+                header.mainmenu {
+                    img {
+                    height: 200px;
+                    width: 200px;
+                }
+                }
+                
+        menu.mainmenu{
+            margin-top: 2rem;
+            a:link, a:visited {
+                span {
+                    background-color: #663399;
+                    height: 50px;
+                    width: 50px;
+                }
+
+                aside{
+                    h4 {
+                        font-size: 1.2rem;
+                    } 
+                }
+            }
+        }
+    }
+    section {
+        margin: 2rem auto;
+        h2.subtitle {
+             color: #ab7dd9;
+            border-bottom: 0.4rem;
+        }  
+    }
+    }
+    &.emmet {
+        background: linear-gradient(45deg, black, #7acb16);
+        section {
+            h2.subtitle {
+                color: #7acb16;
+                border-bottom: 2px dotted #7acb16;
+                padding-bottom: 0.4rem;
+                small {
+                    color: #fff;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                }
+            }
+            h3 {
+                color: #7acb16;
+                margin: 0;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            xmp {
+                background-color: #0009;
+                border-radius: 8px;
+                padding: 0.6rem;
+                margin: 0;
+            }
+        }
+    }
     &.html{
     background: linear-gradient(45deg, black, #e44d26);
     main {
