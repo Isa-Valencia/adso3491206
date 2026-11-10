@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,129 +11,116 @@
         }
         body {
             background-color: #000;
-            background:#000 url(imgs/fondo.jpg) no-repeat center;
-            background-size: 500px auto;
+            background: #000 url(imgs/fondo.jpeg) no-repeat center center;
+            background-size: cover;
             background-attachment: fixed;
             font-family: Poppins, sans-serif;
             color: #fff;
-
-            main {
-                border: 4px solid #fff;
-                padding: 1rem;
-                margin: 2rem auto;
-                width: 1230px;
-
-                figure.logo {
-                    background: url(imgs/logo-dragonball.png) no-repeat center;
-                    height: 300px;
-                    margin: 0 auto;
-                    width: 900px;
-                    animation: 2.5s animLogo infinite ease ;
-                }
-                h2 {
-                    display: none;
-                    text-align: center;
-                }
-                p {
-                    line-height: 2rem;
-                    text-align: justify;
-                }
-                .cuadro {
-                    display: inline-block;
-                    width: 23%;
-                    margin: 0%;
-                    vertical-align: top;
-                    border: 2px solid #fff;
-                    height: 320px;
-                }
-                .cuadro img {
-                    width: 100%;
-                    height: 260px;
-                    object-fit: cover;
-                    display: block;
-                }
-                .cuadro p {
-                    text-align: center;
-                    height: 60px;
-                    line-height: 60px;
-                    margin: 0;
-                }
-                .fila {
-                    margin-top: 30px;
-                    border: 2px solid #fff;
-                    padding: 10px;
-                }
-                .foto {
-                    display: inline-block;
-                    width: 200px;
-                    vertical-align: top;
-                }
-                .foto img { 
-                    width: 100%;
-                    height: 200px;
-                    display: block;
-
-                 }
-                .texto {
-                    display: inline-block;
-                    width: 70%;
-                    vertical-align: top;
-                }
-            }
+            margin: 0;
+            min-height: 100vh;
         }
+        main {
+            border: 4px solid #fff;
+            padding: 1rem;
+            margin: 2rem auto;
+            width: 1230px;
+            background-color: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(2px);
+        }
+        figure.logo {
+            background: url(imgs/logo.png) no-repeat center;
+            background-size: contain;
+            height: 300px;
+            margin: 0 auto;
+            width: 900px;
+            animation: 2.5s animLogo infinite ease ;
+        }
+        h2 {
+            display: none;
+            text-align: center;
+        }
+        p {
+            line-height: 2rem;
+            text-align: justify;
+        }
+        .cuadro {
+            display: inline-block;
+            width: 23%;
+            margin: 0%;
+            vertical-align: top;
+            border: 2px solid #fff;
+            height: 320px;
+        }
+        .cuadro img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+        .cuadro p {
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .fila {
+            margin-top: 30px;
+            border: 2px solid #fff;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .foto {
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+        }
+        .foto img { 
+            width: 100%;
+            height: 200px;
+            display: block;
+        }
+        .texto {
+            display: inline-block;
+            width: 70%;
+            vertical-align: top;
+        }
+
         @keyframes animLogo {
             0%, 100% { transform: scale(0.8); }
             50%   {transform: scale(1.2); }
-
         }
         
         @media (min-width: 1280px) {
-            body {
-                main {
-                    h2:first-of-type { display: block; }
-                }
-            }
+            main h2:first-of-type { display: block; }
         }
             
-         
         @media (max-width: 1280px) {
-            body {
-                main {
-                    h2:nth-of-type(2) { display: block; }
-                    width: 750px;
-
-                    figure.logo {
-                        background: url(imgs/logo-dragonball.png) no-repeat center;
-                        height: 300px;
-                        margin: 0 auto;
-                        width: 500px;
-                    }
-                    .cuadro { width: 46%; }
-                    .foto { width: 150px; }
-                    .texto { width: 60%; }
-                }
+            main {
+                width: 750px;
             }
+            main h2:nth-of-type(2) { display: block; }
+            figure.logo {
+                width: 500px;
+            }
+            .cuadro { width: 46%; }
+            .foto { width: 150px; }
+            .texto { width: 60%; }
         }
 
-         
         @media (max-width: 800px) {
-            body {
-                main {
-                    h2:last-of-type { display: block; }
-                    h2:nth-of-type(2) { display: none; }
-                    width: 350px;
-
-                    figure.logo {
-                        background: url(imgs/logo-dragonball.png) no-repeat center;
-                        height: 180px;
-                        margin: 0 auto;
-                        width: 280px;
-                    }
-                    .cuadro { width: 90%; display: block; margin: 10px auto; }
-                    .foto { display: block; width: 100%; }
-                    .texto { display: block; width: 100%; }
-                }
+            main {
+                width: 350px;
             }
+            main h2:last-of-type { display: block; }
+            main h2:nth-of-type(2) { display: none; }
+            figure.logo {
+                height: 180px;
+                width: 280px;
+            }
+            .cuadro { width: 90%; display: block; margin: 10px auto; }
+            .foto { display: block; width: 100%; }
+            .texto { display: block; width: 100%; }
         }
     </style>
 </head>
@@ -145,20 +132,20 @@
         <h2>BreackPoint: < 800px <br> (Resolution: Mobile) </h2>
 
         <div>
-            <div class="cuadro"><img src="imgs/goku.jpg"><p>GOKU</p></div>
-            <div class="cuadro"><img src="imgs/broly.jpg"><p>BROLY</p></div>
-            <div class="cuadro"><img src="imgs/bulma.jpg"><p>BULMA</p></div>
-            <div class="cuadro"><img src="imgs/vegeta.jpg"><p>VEGETA</p></div>
+            <div class="cuadro"><img src="imgs/Chuuya1.jpeg"><p>CHUUYA NAKAHARA</p></div>
+            <div class="cuadro"><img src="imgs/Dazai1.jpeg"><p>DAZAI OSAMU</p></div>
+            <div class="cuadro"><img src="imgs/Atsushi.jpeg"><p>ATSUSHI NAKAJIMA</p></div>
+            <div class="cuadro"><img src="imgs/Akutagawa.jpeg"><p>AKUTAGAWA RYUNOSUKE</p></div>
         </div>
 
         <div class="fila">
-            <div class="foto"><img src="imgs/goku2.png"></div>
-            <div class="texto"><p>Goku es un niño que viene de otro planeta mandado por sus padres a la tierra para ponerlo a salvo y siendo criado por su abuelito quien lo acoge cuando loe ncuentra dentro de una nave, entre aventuras y su lucha por mantener el planeta tierra a salvo de los enemigos que se van presentando con el deseo de destruir la tierra , lugar el cual goku considera su hogar.</p></div>
+            <div class="foto"><img src="imgs/Chuuya2.jpeg"></div>
+            <div class="texto"><p>Chuuya Nakahara, conocido por su carácter fuerte, orgulloso y temperamental. Es un ejecutivo de la Mafia del Puerto, destaca por su elegancia, lealtad y habilidades de combate. A pesar de su actitud impulsiva, es inteligente, decidido y posee un gran sentido del honor. Su habilidad le permite manipular la gravedad.</p></div>
         </div>
 
         <div class="fila">
-            <div class="foto"><img src="imgs/esferas.jpg"></div>
-            <div class="texto"><p>las esferas del dragon son elemnto pricipal para quienes desean buscarlas y pedirle a shenlong un deseo, muchos las desean pero no con las mejores intenciones</p></div>
+            <div class="foto"><img src="imgs/Dazai2.jpeg"></div>
+            <div class="texto"><p>Osamu Dazai conocido por su personalidad despreocupada, bromista y misteriosa. Es inteligente, astuto y manipulador, capaz de anticiparse a sus enemigos gracias a su gran capacidad estratégica. Aunque suele ocultar sus verdaderos sentimientos detrás del humor, tiene un pasado complicado y una personalidad mucho más profunda de lo que aparenta. Su habilidad, No Longer Human, le permite anular las habilidades sobrenaturales con solo tocar a alguien.</p></div>
         </div>
     </main>
 </body>
