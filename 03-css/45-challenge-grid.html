@@ -24,38 +24,34 @@
             display: block;
         }
 
-        
+        /* Example 01 */
         .example01 {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 140px 140px 140px;
             grid-template-areas:
-                "a1 a2 a3"
-                "a4 a2 a5"
-                "a6 a6 a7";
+                "one two three"
+                "four two five"
+                "six six seven";
         }
-        .a1 { grid-area: a1; }
-        .a2 { grid-area: a2; }
-        .a3 { grid-area: a3; }
-        .a4 { grid-area: a4; }
-        .a5 { grid-area: a5; }
-        .a6 { grid-area: a6; }
-        .a7 { grid-area: a7; }
 
-        
+        /* Example 02 */
         .example02 {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 140px 140px 140px;
             grid-template-areas:
-                "b1 b1 b2 b3"
-                "b1 b1 b4 b4"
-                "b5 b6 b4 b4";
+                "one one two three"
+                "one one four four"
+                "five six four four";
         }
-        .b1 { grid-area: b1; }
-        .b2 { grid-area: b2; }
-        .b3 { grid-area: b3; }
-        .b4 { grid-area: b4; }
-        .b5 { grid-area: b5; }
-        .b6 { grid-area: b6; }
+
+        /* NOMBRES IGUALES PARA LOS DOS */
+        .one { grid-area: one; }
+        .two { grid-area: two; }
+        .three { grid-area: three; }
+        .four { grid-area: four; }
+        .five { grid-area: five; }
+        .six { grid-area: six; }
+        .seven { grid-area: seven; }
     </style>
 </head>
 <body class="css">
@@ -73,23 +69,23 @@
             <section>
                 <h2 class="subtitle">Example 01:</h2>
                 <div class="gallery example01">
-                    <div class="a1"><img src="imgs/Akutagawa.jpeg"></div>
-                    <div class="a2"><img src="imgs/Atsushi.jpeg"></div>
-                    <div class="a3"><img src="imgs/Chuuya1.jpeg"></div>
-                    <div class="a4"><img src="imgs/Dazai1.jpeg"></div>
-                    <div class="a5"><img src="imgs/Chuuya2.jpeg"></div>
-                    <div class="a6"><img src="imgs/Akutagawa.jpeg"></div>
-                    <div class="a7"><img src="imgs/Atsushi.jpeg"></div>
+                    <div class="one"><img src="imgs/inuyasha.webp"></div>
+                    <div class="two"><img src="imgs/sesshomaru.webp"></div>
+                    <div class="three"><img src="imgs/kagome.jpg"></div>
+                    <div class="four"><img src="imgs/shippo.jpg"></div>
+                    <div class="five"><img src="imgs/miroku.jpg"></div>
+                    <div class="six"><img src="imgs/inu.jpg"></div>
+                    <div class="seven"><img src="imgs/kikyo.jpg"></div>
                 </div>
 
                 <h2 class="subtitle">Example 02:</h2>
                 <div class="gallery example02">
-                    <div class="b1"><img src="imgs/02-1.png"></div>
-                    <div class="b2"><img src="imgs/02-2.png"></div>
-                    <div class="b3"><img src="imgs/02-3.png"></div>
-                    <div class="b4"><img src="imgs/02-4.png"></div>
-                    <div class="b5"><img src="imgs/02-5.png"></div>
-                    <div class="b6"><img src="imgs/02-6.png"></div>
+                    <div class="one"><img src="imgs/Chuuya1.jpeg"></div>
+                    <div class="two"><img src="imgs/Akutagawa.jpeg"></div>
+                    <div class="three"><img src="imgs/ranpo.webp"></div>
+                    <div class="four"><img src="imgs/Dazai2.jpeg"></div>
+                    <div class="five"><img src="imgs/Atsushi.jpeg"></div>
+                    <div class="six"><img src="imgs/fyodor.jpg"></div>
                 </div>
             </section>
     </main>
